@@ -17,3 +17,8 @@ a {
   margin-right: 5%;
   padding: 2%;
 }
+
+p {
+  border-radius: 10px;
+}
+

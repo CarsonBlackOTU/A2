@@ -2,28 +2,25 @@
 <%- include Partials/main_nav.ejs %>
 <body>
 <div id="wrapper">
-    <form action="mailto:carson.black@ontariotechu.net" method="post" enctype="text/plain" name="form">
-        <p>
-            <label for="name">Name:</label>
-            <input type="text" name="name" size="32" placeholder="Your name here" required>    
-        </p>
-        <p>
-            <label for="email">Email:</label>
-            <input type="email" name="email" size="40" placeholder="Your email Here" required> 
-        </p>
-        <p>
-            <h3>Message:</h3>
-            <textarea name ="Message" cols="60" rows="20" placeholder="your message here" required></textarea>
-        </p>
-        <p>
-            <input type="submit" value="click here to submit">
-        </p>
-        <p>
-            <input type="reset" value="click here to reset text">
-        </p>
-        
-        
-        </form>
+    <header>
+        <h1><i class="fa-regular fa-address-book"></i> Contact Me Here:</h1>
+    </header>
+    <form action="mailto:carson.black@ontariotechu.net" method="post" enctype="text/plain">
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Name</label>
+          <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="John Smith">
+          </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Send Message Here</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
+        </div>
+        <button type="submit" class="btn btn-success">submit</button>
+        <button type="reset" class="btn btn-danger">Reset</button>
+      </form>
 </div>
 </body>
 <%- include Partials/footer.ejs %>
